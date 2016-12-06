@@ -10,7 +10,8 @@ GTMActivityIndicatorView
 ###1. Animations代码不放到库里面（无用代码太多），用户可以通过实现NVActivityIndicatorAnimation定义任意的动画，原来已定义好的动画组件都在demo项目里面，用户可以根据自己的需求挑选想要的动画使用
 - 去掉了枚举enum NVActivityIndicatorType
 - 将protocol NVActivityIndicatorAnimationDelegate改成protocol NVActivityIndicatorAnimation
-###2. `UIViewController 不需要写实现 NVActivityIndicatorViewable的代码
+
+###2. UIViewController 不需要写实现 NVActivityIndicatorViewable的代码
 - 去掉了NVActivityIndicatorViewable协议
 - 将原来针对实现NVActivityIndicatorViewable的UIViewController的扩展改成针对UIViewController的扩展
 
