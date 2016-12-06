@@ -5,7 +5,9 @@ GTMActivityIndicatorView
 `GTMActivityIndicatorView` 是一个Loadding动画库
 
 本库是在 [NVActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView), 的基础上做了一些方便使用的改进
-改进了什么？
+
+
+##改进了什么？
 
 ###1. Animations代码不放到库里面（无用代码太多），用户可以通过实现NVActivityIndicatorAnimation定义任意的动画，原来已定义好的动画组件都在demo项目里面，用户可以根据自己的需求挑选想要的动画使用
 - 去掉了枚举enum NVActivityIndicatorType
