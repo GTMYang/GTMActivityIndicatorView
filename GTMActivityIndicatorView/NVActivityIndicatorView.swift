@@ -76,8 +76,8 @@ public final class NVActivityIndicatorView: UIView {
      
      - returns: The activity indicator view.
      */
-    public init(frame: CGRect, animation: NVActivityIndicatorAnimation? = NVActivityIndicatorAnimationBallSpinFadeLoader(), color: UIColor? = nil, padding: CGFloat? = nil) {
-        self.animation = animation
+    public init(frame: CGRect, animation: NVActivityIndicatorAnimation? = nil, color: UIColor? = nil, padding: CGFloat? = nil) {
+        self.animation = animation ?? NVActivityIndicatorAnimationBallSpinFadeLoader()
         self.color = color ?? NVActivityIndicatorView.DEFAULT_COLOR
         self.padding = padding ?? NVActivityIndicatorView.DEFAULT_PADDING
         super.init(frame: frame)

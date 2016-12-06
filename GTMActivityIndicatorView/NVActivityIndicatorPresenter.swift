@@ -20,7 +20,7 @@ public final class ActivityData {
     let messageFont: UIFont
     
     /// Animation type.
-    let animation: NVActivityIndicatorAnimation!
+    let animation: NVActivityIndicatorAnimation?
     
     /// Color of activity indicator view.
     let color: UIColor
@@ -61,7 +61,7 @@ public final class ActivityData {
         self.size = size ?? NVActivityIndicatorView.DEFAULT_BLOCKER_SIZE
         self.message = message ?? NVActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE
         self.messageFont = messageFont ?? NVActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE_FONT
-        self.animation = animation
+        self.animation = animation ?? NVActivityIndicatorAnimationBallSpinFadeLoader()
         self.color = color ?? NVActivityIndicatorView.DEFAULT_COLOR
         self.padding = padding ?? NVActivityIndicatorView.DEFAULT_PADDING
         self.displayTimeThreshold = displayTimeThreshold ?? NVActivityIndicatorView.DEFAULT_BLOCKER_DISPLAY_TIME_THRESHOLD

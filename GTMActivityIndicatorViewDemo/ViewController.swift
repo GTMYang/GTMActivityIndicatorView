@@ -87,7 +87,7 @@ class ViewController: UIViewController {
     func buttonTapped(_ sender: UIButton) {
         let size = CGSize(width: 30, height:30)
         
-        showLoadding(size, message: "Loading...", animation: animations[sender.tag])
+        showLoadding(size, message: "Loading...")//, animation: animations[sender.tag])
         perform(#selector(delayedStopActivity),
                 with: nil,
                 afterDelay: 2.5)

@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GTMActivityIndicatorView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "swift3 实现的Loadding动画库"
 
   s.homepage     = "https://github.com/GTMYang/GTMActivityIndicatorView"
