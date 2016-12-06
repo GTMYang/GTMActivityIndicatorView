@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GTMActivityIndicatorViewDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>265B45B91DF6525B00275D3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>265B45D51DF652A300275D3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
