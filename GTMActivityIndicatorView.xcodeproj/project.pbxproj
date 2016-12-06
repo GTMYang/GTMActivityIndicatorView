@@ -54,7 +54,7 @@
 		265B462F1DF653C900275D3A /* GTMActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 265B45BA1DF6525B00275D3A /* GTMActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		265B46341DF6583C00275D3A /* GTMActivityIndicatorView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 265B46311DF6583C00275D3A /* GTMActivityIndicatorView.podspec */; };
 		265B46361DF6583C00275D3A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 265B46331DF6583C00275D3A /* README.md */; };
-		267115331DF684D000F27CEA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 267115321DF684D000F27CEA /* LICENSE */; };
+		267115351DF686B800F27CEA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 267115341DF686B800F27CEA /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,7 +131,7 @@
 		265B460A1DF652EC00275D3A /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
 		265B46311DF6583C00275D3A /* GTMActivityIndicatorView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GTMActivityIndicatorView.podspec; sourceTree = "<group>"; };
 		265B46331DF6583C00275D3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		267115321DF684D000F27CEA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		267115341DF686B800F27CEA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +156,7 @@
 		265B45B01DF6525B00275D3A = {
 			isa = PBXGroup;
 			children = (
+				267115341DF686B800F27CEA /* LICENSE */,
 				265B46311DF6583C00275D3A /* GTMActivityIndicatorView.podspec */,
 				265B46331DF6583C00275D3A /* README.md */,
 				265B45BC1DF6525B00275D3A /* GTMActivityIndicatorView */,
@@ -190,7 +191,6 @@
 		265B45C51DF6526C00275D3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				267115321DF684D000F27CEA /* LICENSE */,
 				265B45BE1DF6525B00275D3A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -346,7 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				267115331DF684D000F27CEA /* LICENSE in Resources */,
+				267115351DF686B800F27CEA /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
