@@ -2,7 +2,7 @@ GTMActivityIndicatorView
 ===================
 
 # Introduction
-`GTMActivityIndicatorView` 是一个加载Loadding动画库
+`GTMActivityIndicatorView` 是一个Loadding动画库
 
 本库是在 [NVActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView), 的基础上做了一些方便使用的改进
 改进了什么？
