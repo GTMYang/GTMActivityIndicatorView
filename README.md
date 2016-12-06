@@ -22,6 +22,7 @@ GTMActivityIndicatorView
 
 # Demo
 直接下载代码，代码里面包含Demo
+
 ![alt tag](https://raw.githubusercontent.com/ninjaprox/NVActivityIndicatorView/master/Demo.gif)
 
 For first-hand experience, just open the project and run it.
