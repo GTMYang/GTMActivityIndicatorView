@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		265B45BF1DF6525B00275D3A /* GTMActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 265B45BD1DF6525B00275D3A /* GTMActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		265B45CC1DF6528100275D3A /* NVActivityIndicatorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B45C61DF6528100275D3A /* NVActivityIndicatorAnimation.swift */; };
 		265B45CD1DF6528100275D3A /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B45C71DF6528100275D3A /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
 		265B45CE1DF6528100275D3A /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B45C81DF6528100275D3A /* NVActivityIndicatorPresenter.swift */; };
@@ -84,7 +83,6 @@
 
 /* Begin PBXFileReference section */
 		265B45BA1DF6525B00275D3A /* GTMActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		265B45BD1DF6525B00275D3A /* GTMActivityIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMActivityIndicatorView.h; sourceTree = "<group>"; };
 		265B45BE1DF6525B00275D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		265B45C61DF6528100275D3A /* NVActivityIndicatorAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimation.swift; sourceTree = "<group>"; };
 		265B45C71DF6528100275D3A /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 		265B45C51DF6526C00275D3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				265B45BD1DF6525B00275D3A /* GTMActivityIndicatorView.h */,
 				265B45BE1DF6525B00275D3A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -259,7 +256,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265B45BF1DF6525B00275D3A /* GTMActivityIndicatorView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
