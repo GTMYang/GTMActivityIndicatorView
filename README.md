@@ -18,7 +18,7 @@ GTMActivityIndicatorView
 - 将原来针对实现NVActivityIndicatorViewable的UIViewController的扩展改成针对UIViewController的扩展
 
 # 申明
-如果[NVActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView)项目也作了类似本类库的调整，建议大家用回原库，尊重原创，我这里只作了一点点的工作
+如果[NVActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView)项目也作了类似本类库的调整，建议大家用回原库，尊重原创，我这里只做了一点点的工作
 
 # Demo
 直接下载代码，代码里面包含Demo
