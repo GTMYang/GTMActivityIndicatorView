@@ -1,9 +1,8 @@
 
+![alt tag](https://raw.githubusercontent.com/GTMYang/GTMActivityIndicatorView/master/logo.png)
+
 GTMActivityIndicatorView
 ===================
-
-
-![alt tag](https://raw.githubusercontent.com/GTMYang/GTMActivityIndicatorView/master/logo.png)
 
 # Introduction
 `GTMActivityIndicatorView` 是一个Loadding动画库
