@@ -1,5 +1,9 @@
+
 GTMActivityIndicatorView
 ===================
+
+
+![alt tag](https://raw.githubusercontent.com/ninjaprox/NVActivityIndicatorView/master/logo.png)
 
 # Introduction
 `GTMActivityIndicatorView` 是一个Loadding动画库

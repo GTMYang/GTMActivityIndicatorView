@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26044DAB1DFD1B24006E82B3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 26044DAA1DFD1B24006E82B3 /* logo.png */; };
 		265B45CC1DF6528100275D3A /* NVActivityIndicatorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B45C61DF6528100275D3A /* NVActivityIndicatorAnimation.swift */; };
 		265B45CD1DF6528100275D3A /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B45C71DF6528100275D3A /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
 		265B45CE1DF6528100275D3A /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B45C81DF6528100275D3A /* NVActivityIndicatorPresenter.swift */; };
@@ -82,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		26044DAA1DFD1B24006E82B3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		265B45BA1DF6525B00275D3A /* GTMActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		265B45BE1DF6525B00275D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		265B45C61DF6528100275D3A /* NVActivityIndicatorAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimation.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		265B45B01DF6525B00275D3A = {
 			isa = PBXGroup;
 			children = (
+				26044DAA1DFD1B24006E82B3 /* logo.png */,
 				267115341DF686B800F27CEA /* LICENSE */,
 				265B46311DF6583C00275D3A /* GTMActivityIndicatorView.podspec */,
 				265B46331DF6583C00275D3A /* README.md */,
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				267115351DF686B800F27CEA /* LICENSE in Resources */,
+				26044DAB1DFD1B24006E82B3 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
