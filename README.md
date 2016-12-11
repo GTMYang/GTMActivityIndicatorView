@@ -3,7 +3,7 @@ GTMActivityIndicatorView
 ===================
 
 
-![alt tag](https://raw.githubusercontent.com/ninjaprox/NVActivityIndicatorView/master/logo.png)
+![alt tag](https://raw.githubusercontent.com/GTMYang/GTMActivityIndicatorView/master/logo.png)
 
 # Introduction
 `GTMActivityIndicatorView` 是一个Loadding动画库
@@ -27,7 +27,7 @@ GTMActivityIndicatorView
 # Demo
 直接下载代码，代码里面包含Demo
 
-![alt tag](https://raw.githubusercontent.com/ninjaprox/NVActivityIndicatorView/master/Demo.gif)
+![alt tag](https://raw.githubusercontent.com/GTMYang/GTMActivityIndicatorView/master/Demo.gif)
 
 For first-hand experience, just open the project and run it.
 
