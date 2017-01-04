@@ -57,6 +57,7 @@
 		265B46341DF6583C00275D3A /* GTMActivityIndicatorView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 265B46311DF6583C00275D3A /* GTMActivityIndicatorView.podspec */; };
 		265B46361DF6583C00275D3A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 265B46331DF6583C00275D3A /* README.md */; };
 		267115351DF686B800F27CEA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 267115341DF686B800F27CEA /* LICENSE */; };
+		269DC3B01E1CF2FD009BC00B /* GTMActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269DC3AF1E1CF2FD009BC00B /* GTMActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		265B46311DF6583C00275D3A /* GTMActivityIndicatorView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GTMActivityIndicatorView.podspec; sourceTree = "<group>"; };
 		265B46331DF6583C00275D3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		267115341DF686B800F27CEA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		269DC3AF1E1CF2FD009BC00B /* GTMActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTMActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		265B45BC1DF6525B00275D3A /* GTMActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				269DC3AF1E1CF2FD009BC00B /* GTMActivityIndicatorView.swift */,
 				265B45C61DF6528100275D3A /* NVActivityIndicatorAnimation.swift */,
 				265B45C71DF6528100275D3A /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
 				265B45C81DF6528100275D3A /* NVActivityIndicatorPresenter.swift */,
@@ -377,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				265B45CF1DF6528100275D3A /* NVActivityIndicatorShape.swift in Sources */,
+				269DC3B01E1CF2FD009BC00B /* GTMActivityIndicatorView.swift in Sources */,
 				265B45D01DF6528100275D3A /* NVActivityIndicatorView.swift in Sources */,
 				265B45CE1DF6528100275D3A /* NVActivityIndicatorPresenter.swift in Sources */,
 				265B45CC1DF6528100275D3A /* NVActivityIndicatorAnimation.swift in Sources */,

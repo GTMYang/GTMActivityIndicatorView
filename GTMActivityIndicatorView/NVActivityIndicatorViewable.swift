@@ -34,22 +34,13 @@ public extension UIViewController {
         padding: CGFloat? = nil,
         displayTimeThreshold: Int? = nil,
         minimumDisplayTime: Int? = nil) {
-        let activityData = ActivityData(size: size,
-                                        message: message,
-                                        messageFont: messageFont,
-                                        animation: animation,
-                                        color: color,
-                                        padding: padding,
-                                        displayTimeThreshold: displayTimeThreshold,
-                                        minimumDisplayTime: minimumDisplayTime)
-        
-        NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
+        showIndicator(size, message: message, messageFont: messageFont, animation: animation, color: color, padding: padding, displayTimeThreshold: displayTimeThreshold, minimumDisplayTime: minimumDisplayTime)
     }
     
     /**
      Remove UI blocker.
      */
     public final func hideLoadding() {
-        NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+        hideIndicator()
     }
 }
