@@ -87,7 +87,8 @@ class ViewController: UIViewController {
     func buttonTapped(_ sender: UIButton) {
         let size = CGSize(width: 30, height:30)
         
-        showIndicator(size, message: "Loading...", animation: animations[sender.tag], color: UIColor(colorLiteralRed: 246/255, green: 83/255, blue: 20/255, alpha: 1.0))
+        let color = UIColor.init(red: 246/255.0, green: 83/255.0, blue: 20/255.0, alpha: 1)
+        showIndicator(size, message: "Loading...", animation: animations[sender.tag], color: color)
         perform(#selector(delayedStopActivity),
                 with: nil,
                 afterDelay: 2.5)

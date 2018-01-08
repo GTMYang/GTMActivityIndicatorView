@@ -76,9 +76,9 @@ _**Note:** Make sure that all files in `GTMActivityIndicatorView` included in Co
 
 # Migration
 
-## Vesrion 1.0
+## Vesrion 1.2.0
 
-This version requires Xcode 8.0 and Swift 3.
+This version requires Xcode 9.0 and Swift 4.
 
 # Usage
 

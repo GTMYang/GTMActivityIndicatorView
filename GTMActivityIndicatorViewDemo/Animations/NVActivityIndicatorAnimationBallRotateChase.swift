@@ -43,7 +43,7 @@ class NVActivityIndicatorAnimationBallRotateChase: NVActivityIndicatorAnimation 
         let positionAnimation = CAKeyframeAnimation(keyPath: "position")
         positionAnimation.duration = duration
         positionAnimation.repeatCount = HUGE
-        positionAnimation.path = UIBezierPath(arcCenter: CGPoint(x: x, y: y), radius: size.width / 2, startAngle: 3 * CGFloat(M_PI) * 0.5, endAngle: 3 * CGFloat(M_PI) * 0.5 + 2 * CGFloat(M_PI), clockwise: true).cgPath
+        positionAnimation.path = UIBezierPath(arcCenter: CGPoint(x: x, y: y), radius: size.width / 2, startAngle: 3 * CGFloat(Double.pi) * 0.5, endAngle: 3 * CGFloat(Double.pi) * 0.5 + 2 * CGFloat(Double.pi), clockwise: true).cgPath
         
         // Aniamtion
         let animation = CAAnimationGroup()
