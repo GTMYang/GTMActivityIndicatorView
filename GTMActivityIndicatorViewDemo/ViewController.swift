@@ -84,7 +84,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func buttonTapped(_ sender: UIButton) {
+    @objc func buttonTapped(_ sender: UIButton) {
         let size = CGSize(width: 30, height:30)
         
         let color = UIColor.init(red: 246/255.0, green: 83/255.0, blue: 20/255.0, alpha: 1)
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
                 afterDelay: 2.5)
     }
     
-    func delayedStopActivity() {
+    @objc func delayedStopActivity() {
         hideIndicator()
     }
 
