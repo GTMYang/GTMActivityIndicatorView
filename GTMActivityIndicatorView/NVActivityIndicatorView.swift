@@ -15,6 +15,8 @@ public final class NVActivityIndicatorView: UIView {
     /// Default color. Default value is UIColor.whiteColor().
     public static var DEFAULT_COLOR = UIColor.white
     
+    public static var DEFAULT_STYLE = IndicatorStyle.transparent
+    
     /// Default padding. Default value is 0.
     public static var DEFAULT_PADDING: CGFloat = 0
     

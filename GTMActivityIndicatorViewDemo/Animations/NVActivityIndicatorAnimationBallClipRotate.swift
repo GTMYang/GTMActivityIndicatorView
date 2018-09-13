@@ -36,7 +36,7 @@ class NVActivityIndicatorAnimationBallClipRotate: NVActivityIndicatorAnimation {
         animation.isRemovedOnCompletion = false
         
         // Draw circle
-        let circle = NVActivityIndicatorShape.ringThirdFour.layerWith(size: CGSize(width: size.width, height: size.height), color: color)
+        let circle = NVActivityIndicatorShape.ringThirdFour(lineWidth: 2, margin: 0).layerWith(size: CGSize(width: size.width, height: size.height), color: color)
         let frame = CGRect(x: (layer.bounds.size.width - size.width) / 2,
                            y: (layer.bounds.size.height - size.height) / 2,
                            width: size.width,

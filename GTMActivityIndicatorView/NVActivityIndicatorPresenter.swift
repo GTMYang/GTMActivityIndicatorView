@@ -25,6 +25,8 @@ public final class ActivityData {
     /// Color of activity indicator view.
     let color: UIColor
     
+    let style: IndicatorStyle
+    
     /// Padding of activity indicator view.
     let padding: CGFloat
     
@@ -55,6 +57,7 @@ public final class ActivityData {
                 messageFont: UIFont? = nil,
                 animation: NVActivityIndicatorAnimation? = nil,
                 color: UIColor? = nil,
+                style: IndicatorStyle? = nil,
                 padding: CGFloat? = nil,
                 displayTimeThreshold: Int? = nil,
                 minimumDisplayTime: Int? = nil) {
@@ -63,6 +66,7 @@ public final class ActivityData {
         self.messageFont = messageFont ?? NVActivityIndicatorView.DEFAULT_BLOCKER_MESSAGE_FONT
         self.animation = animation ?? NVActivityIndicatorAnimationBallSpinFadeLoader()
         self.color = color ?? NVActivityIndicatorView.DEFAULT_COLOR
+        self.style = style ?? NVActivityIndicatorView.DEFAULT_STYLE
         self.padding = padding ?? NVActivityIndicatorView.DEFAULT_PADDING
         self.displayTimeThreshold = displayTimeThreshold ?? NVActivityIndicatorView.DEFAULT_BLOCKER_DISPLAY_TIME_THRESHOLD
         self.minimumDisplayTime = minimumDisplayTime ?? NVActivityIndicatorView.DEFAULT_BLOCKER_MINIMUM_DISPLAY_TIME
@@ -137,6 +141,16 @@ public final class NVActivityIndicatorPresenter {
         activityIndicatorView.center = activityContainer.center
         activityIndicatorView.startAnimating()
         activityContainer.addSubview(activityIndicatorView)
+        
+        switch activityData.style {
+        case .whiteRoundBlock:
+            activityIndicatorView.layer.cornerRadius = 8
+            activityIndicatorView.backgroundColor = .white
+        case .blackRoundBlock:
+            activityIndicatorView.layer.cornerRadius = 8
+            activityIndicatorView.backgroundColor = .black
+        default: break
+        }
         
         if let message = activityData.message , !message.isEmpty {
             let label = UILabel()

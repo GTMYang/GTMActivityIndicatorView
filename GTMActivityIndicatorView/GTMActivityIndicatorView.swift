@@ -29,6 +29,7 @@ public func showIndicator(
     animation: NVActivityIndicatorAnimation? = nil,
     color: UIColor? = nil,
     padding: CGFloat? = nil,
+    style: IndicatorStyle? = nil,
     displayTimeThreshold: Int? = nil,
     minimumDisplayTime: Int? = nil) {
     let activityData = ActivityData(size: size,
@@ -36,6 +37,7 @@ public func showIndicator(
                                     messageFont: messageFont,
                                     animation: animation,
                                     color: color,
+                                    style: style,
                                     padding: padding,
                                     displayTimeThreshold: displayTimeThreshold,
                                     minimumDisplayTime: minimumDisplayTime)
@@ -48,4 +50,10 @@ public func showIndicator(
  */
 public func hideIndicator() {
     NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+}
+
+public enum IndicatorStyle {
+    case whiteRoundBlock
+    case blackRoundBlock
+    case transparent
 }

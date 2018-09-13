@@ -87,7 +87,7 @@ class NVActivityIndicatorAnimationPacman: NVActivityIndicatorAnimation {
         animation.isRemovedOnCompletion = false
         
         // Draw circles
-        let circle = NVActivityIndicatorShape.circle.layerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
+        let circle = NVActivityIndicatorShape.circle(margin: 0).layerWith(size: CGSize(width: circleSize, height: circleSize), color: color)
         let frame = CGRect(
             x: (layer.bounds.size.width - size.width) / 2 + size.width - circleSize,
             y: (layer.bounds.size.height - circleSize) / 2,

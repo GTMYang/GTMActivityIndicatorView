@@ -12,13 +12,16 @@ import GTMActivityIndicatorView
 class MyLoading: NVActivityIndicatorAnimation {
     func setUpAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
         let doration: CFTimeInterval = 4
-        let lineWidth: CGFloat = 8
+        let lineWidth0: CGFloat = 6
+        let lineWidth: CGFloat = lineWidth0 + 0.2
+      //  let size = CGSize(width: size.width*0.8, height: size.height*0.8)
+        let marg = size.width*0.1
         
         // fat ring
-        let fatRing = NVActivityIndicatorShape.ring(lineWidth: lineWidth).layerWith(size: size, color: color)
+        let fatRing = NVActivityIndicatorShape.ring(lineWidth: lineWidth0, margin: marg).layerWith(size: size, color: color)
         let scaleFat = CAKeyframeAnimation(keyPath: "transform.scale")
         scaleFat.keyTimes = [0, 0.5, 0.625, 0.75, 0.875, 1]
-        scaleFat.values = [1, 1, 1.3, 1, 1.3, 1]
+        scaleFat.values = [1, 1, 1.0/0.8, 1, 1.0/0.8, 1]
         scaleFat.duration = doration
         scaleFat.repeatCount = HUGE
         fatRing.add(scaleFat, forKey: "scale")
@@ -33,24 +36,30 @@ class MyLoading: NVActivityIndicatorAnimation {
         let split = CGFloat(Double.pi * 1/2)
         var start: CGFloat = 0
         var end: CGFloat = -split
-        let indcator = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth).layerWith(size: size, color: color)
-        let rotateAnimation = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        rotateAnimation.keyTimes = [0, 0.5, 1]
-        rotateAnimation.values = [0, 2 * Double.pi, 2 * Double.pi]
-        rotateAnimation.duration = doration
-        rotateAnimation.repeatCount = HUGE
+        let indcator = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth, margin: marg).layerWith(size: size, color: color)
+        let rotate = CAKeyframeAnimation(keyPath:"transform.rotation.z")
+        rotate.keyTimes = [0, 0.5, 1]
+        rotate.values = [0, 2 * Double.pi, 2 * Double.pi]
+        rotate.duration = doration
+        rotate.repeatCount = HUGE
         indcator.add(toggle, forKey: "toggle")
-        indcator.add(rotateAnimation, forKey: "rotation")
+        indcator.add(rotate, forKey: "rotation")
         
         
-        let part1 = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth).layerWith(size: size, color: UIColor.white)
+        let part1 = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth, margin: marg).layerWith(size: size, color: UIColor.white)
+        let rotate1 = CAKeyframeAnimation(keyPath:"transform.rotation.z")
+        rotate1.keyTimes = [0, 0.125, 0.5, 1]
+        rotate1.values = [0, 0, -2 * Double.pi, -2 * Double.pi]
+        rotate1.duration = doration
+        rotate1.repeatCount = HUGE
+        //part1.add(rotate1, forKey: "rotate1")
         part1.add(toggle, forKey: "toggle")
         layer.addSublayer(part1)
         
         
         start += split
         end += split
-        let part2 = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth).layerWith(size: size, color: UIColor.white)
+        let part2 = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth, margin: marg).layerWith(size: size, color: UIColor.white)
         let animation2 = CAKeyframeAnimation(keyPath: "opacity")
         animation2.keyTimes = [0, 0.125, 0.125, 1]
         animation2.values = [1, 1, 0, 0]
@@ -62,7 +71,7 @@ class MyLoading: NVActivityIndicatorAnimation {
 
         start += split
         end += split
-        let part3 = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth).layerWith(size: size, color: UIColor.white)
+        let part3 = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth, margin: marg).layerWith(size: size, color: UIColor.white)
         let animation3 = CAKeyframeAnimation(keyPath: "opacity")
         animation3.keyTimes = [0, 0.25, 0.25, 1]
         animation3.values = [1, 1, 0, 0]
@@ -74,7 +83,7 @@ class MyLoading: NVActivityIndicatorAnimation {
 
         start += split
         end += split
-        let part4 = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth).layerWith(size: size, color: UIColor.white)
+        let part4 = NVActivityIndicatorShape.ringPart(startAngle: start, endAngle: end, lineWidth: lineWidth, margin: marg).layerWith(size: size, color: UIColor.white)
         let animation4 = CAKeyframeAnimation(keyPath: "opacity")
         animation4.keyTimes = [0, 0.375, 0.375, 1]
         animation4.values = [1, 1, 0, 0]
@@ -86,7 +95,7 @@ class MyLoading: NVActivityIndicatorAnimation {
         layer.addSublayer(indcator)
         
         // thin ring
-        let thinRing = NVActivityIndicatorShape.ring(lineWidth: 2).layerWith(size: size, color: color)
+        let thinRing = NVActivityIndicatorShape.ring(lineWidth: 1, margin: marg).layerWith(size: size, color: color)
         
         let scaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
         scaleAnimation.keyTimes = [0, 0.5, 0.625, 0.75, 0.875, 1]

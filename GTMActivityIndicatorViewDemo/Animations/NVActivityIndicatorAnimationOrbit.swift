@@ -54,7 +54,7 @@ class NVActivityIndicatorAnimationOrbit: NVActivityIndicatorAnimation {
         animation.isRemovedOnCompletion = false
         
         // Draw circle
-        let circle = NVActivityIndicatorShape.circle.layerWith(size: CGSize(width: coreSize, height: coreSize), color: color)
+        let circle = NVActivityIndicatorShape.circle(margin: 0).layerWith(size: CGSize(width: coreSize, height: coreSize), color: color)
         let frame = CGRect(x: (layer.bounds.size.width - coreSize) / 2,
                            y: (layer.bounds.size.height - coreSize) / 2,
                            width: coreSize,
@@ -92,7 +92,7 @@ class NVActivityIndicatorAnimationOrbit: NVActivityIndicatorAnimation {
         animation.isRemovedOnCompletion = false
         
         // Draw circle
-        let circle = NVActivityIndicatorShape.circle.layerWith(size: CGSize(width: coreSize, height: coreSize), color: color)
+        let circle = NVActivityIndicatorShape.circle(margin: 0).layerWith(size: CGSize(width: coreSize, height: coreSize), color: color)
         let frame = CGRect(x: (layer.bounds.size.width - coreSize) / 2,
                            y: (layer.bounds.size.height - coreSize) / 2,
                            width: coreSize,
@@ -119,7 +119,7 @@ class NVActivityIndicatorAnimationOrbit: NVActivityIndicatorAnimation {
         scaleAnimation.isRemovedOnCompletion = false
         
         // Draw circle
-        let circle = NVActivityIndicatorShape.circle.layerWith(size: CGSize(width: coreSize, height: coreSize), color: color)
+        let circle = NVActivityIndicatorShape.circle(margin: 0).layerWith(size: CGSize(width: coreSize, height: coreSize), color: color)
         let frame = CGRect(x: (layer.bounds.size.width - coreSize) / 2,
                            y: (layer.bounds.size.height - coreSize) / 2,
                            width: coreSize,
@@ -144,7 +144,7 @@ class NVActivityIndicatorAnimationOrbit: NVActivityIndicatorAnimation {
         rotateAnimation.isRemovedOnCompletion = false
         
         // Draw circle
-        let circle = NVActivityIndicatorShape.circle.layerWith(size: CGSize(width: satelliteSize, height: satelliteSize), color: color)
+        let circle = NVActivityIndicatorShape.circle(margin: 0).layerWith(size: CGSize(width: satelliteSize, height: satelliteSize), color: color)
         let frame = CGRect(x: 0, y: 0, width: satelliteSize, height: satelliteSize)
         
         circle.frame = frame
