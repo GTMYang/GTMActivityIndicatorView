@@ -11,10 +11,11 @@ import UIKit
 public enum NVActivityIndicatorShape {
     case circle
     case circleSemi
-    case ring
+    case ring(lineWidth: CGFloat)
     case ringTwoHalfVertical
     case ringTwoHalfHorizontal
     case ringThirdFour
+    case ringPart(startAngle:CGFloat , endAngle: CGFloat, lineWidth: CGFloat)
     case rectangle
     case triangle
     case line
@@ -41,11 +42,20 @@ public enum NVActivityIndicatorShape {
                         clockwise: false)
             path.close()
             layer.fillColor = color.cgColor
-        case .ring:
+        case .ring(let lineWidth):
             path.addArc(withCenter: CGPoint(x: size.width / 2, y: size.height / 2),
-                        radius: size.width / 2,
+                        radius: (size.width - lineWidth) / 2,
                         startAngle: 0,
-                        endAngle: CGFloat(2 * Double.pi),
+                        endAngle: CGFloat(2*Double.pi),
+                        clockwise: false);
+            layer.fillColor = nil
+            layer.strokeColor = color.cgColor
+            layer.lineWidth = lineWidth
+        case .ringPart(let start, let end, let lineWidth):
+            path.addArc(withCenter: CGPoint(x: size.width / 2, y: size.height / 2),
+                        radius: (size.width - lineWidth) / 2,
+                        startAngle: start,
+                        endAngle: end,
                         clockwise: false);
             layer.fillColor = nil
             layer.strokeColor = color.cgColor

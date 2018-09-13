@@ -57,6 +57,7 @@
 		265B46341DF6583C00275D3A /* GTMActivityIndicatorView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 265B46311DF6583C00275D3A /* GTMActivityIndicatorView.podspec */; };
 		265B46361DF6583C00275D3A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 265B46331DF6583C00275D3A /* README.md */; };
 		267115351DF686B800F27CEA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 267115341DF686B800F27CEA /* LICENSE */; };
+		268EF2972149F2C3001E4A2A /* MyLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268EF2962149F2C3001E4A2A /* MyLoading.swift */; };
 		269DC3B01E1CF2FD009BC00B /* GTMActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269DC3AF1E1CF2FD009BC00B /* GTMActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,7 @@
 		265B46311DF6583C00275D3A /* GTMActivityIndicatorView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GTMActivityIndicatorView.podspec; sourceTree = "<group>"; };
 		265B46331DF6583C00275D3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		267115341DF686B800F27CEA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		268EF2962149F2C3001E4A2A /* MyLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoading.swift; sourceTree = "<group>"; };
 		269DC3AF1E1CF2FD009BC00B /* GTMActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTMActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +256,7 @@
 				265B46081DF652EC00275D3A /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
 				265B46091DF652EC00275D3A /* NVActivityIndicatorAnimationSquareSpin.swift */,
 				265B460A1DF652EC00275D3A /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				268EF2962149F2C3001E4A2A /* MyLoading.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				265B46231DF652EC00275D3A /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
 				265B46271DF652EC00275D3A /* NVActivityIndicatorAnimationPacman.swift in Sources */,
 				265B46361DF6583C00275D3A /* README.md in Sources */,
+				268EF2972149F2C3001E4A2A /* MyLoading.swift in Sources */,
 				265B46101DF652EC00275D3A /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
 				265B46251DF652EC00275D3A /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
 				265B46281DF652EC00275D3A /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
