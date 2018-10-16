@@ -19,7 +19,7 @@ class NVActivityIndicatorAnimationPacman: NVActivityIndicatorAnimation {
     func pacmanInLayer(_ layer: CALayer, size: CGSize, color: UIColor) {
         let pacmanSize = 2 * size.width / 3
         let pacmanDuration: CFTimeInterval = 0.5
-        let timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
+        let timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default)
         
         // Stroke start animation
         let strokeStartAnimation = CAKeyframeAnimation(keyPath: "strokeStart")
