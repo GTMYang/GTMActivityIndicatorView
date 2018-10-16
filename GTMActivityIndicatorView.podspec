@@ -3,8 +3,9 @@
 Pod::Spec.new do |s|
 
   s.name         = "GTMActivityIndicatorView"
-  s.version      = "1.3.1"
+  s.version      = "1.3.2"
   s.summary      = "swift 实现的Loadding动画库"
+  s.swift_version= "4.2"
 
   s.homepage     = "https://github.com/GTMYang/GTMActivityIndicatorView"
 
@@ -18,6 +19,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.frameworks = "UIKit"
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
+#s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
 
 end

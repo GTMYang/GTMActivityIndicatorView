@@ -81,7 +81,7 @@ class NVActivityIndicatorAnimationPacman: NVActivityIndicatorAnimation {
         let animation = CAAnimationGroup()
         
         animation.animations = [translateAnimation, opacityAnimation]
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         animation.duration = circleDuration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = false

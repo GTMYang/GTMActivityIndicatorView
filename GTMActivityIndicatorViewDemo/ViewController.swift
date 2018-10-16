@@ -79,7 +79,7 @@ class ViewController: UIViewController {
             button.tag = index
             button.addTarget(self,
                              action: #selector(buttonTapped(_:)),
-                             for: UIControlEvents.touchUpInside)
+                             for: UIControl.Event.touchUpInside)
             self.view.addSubview(button)
         }
     }
